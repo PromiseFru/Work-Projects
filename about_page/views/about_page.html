@@ -1,22 +1,127 @@
 <!DOCTYPE html>
-<htmk>
+<html>
+
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
         <title>About_Page</title>
-        <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            html{
+                width: 100%;
+                height: 100%;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+            }
+            header{
+                flex: 0 0 auto;
+            }
+            #content{
+                flex: 1 0 auto;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+            }
+            footer{
+                flex: 0 0 auto;
+                background-color: #232222;
+                color: white;
+                text-align: center;
+                height: 60px;
+            }
+        </style>
     </head>
+
     <body>
         <!--navbar_starting-->
         <header>
-            <nav>
-                
+            <nav class="navbar navbar-light">
+                <!--brand_name_start-->
+                <a class="navbar-brand">AurbanPay</a>
+                <!--brand_name_end-->
             </nav>
         </header>
         <!--navbar_ending-->
-        
+
         <!--main_body_start-->
-        <div>
+        <div id="content" class="row">
+            <!--side_nav_start-->
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                    <a class="nav-link active" id="Refill_tab" data-toggle="pill" href="#Refill" role="tab" aria-controls="Refill" aria-expanded="true">Refill</a>
+                    <a class="nav-link" id="Withdraw_tab" data-toggle="pill" href="#Withdraw" role="tab" aria-controls="Withdraw" aria-expanded="true">Withdraw</a>
+                    <a class="nav-link" id="Invest_tab" data-toggle="pill" href="#Invest" role="tab" aria-controls="Invest" aria-expanded="true">Invest</a>
+                    <a class="nav-link" id="Enterprise_tab" data-toggle="pill" href="#Enterprise" role="tab" aria-controls="Enterprise" aria-expanded="true">Enterprise</a>
+                </div>
+            </div>
+            <!--side_nav_end-->
+
+            <!--content_start-->
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!--Refill_start-->
+                    <div class="tab-pane fade show active" id="Refill" role="tabpanel" aria-labelledby="Refill_tab">
+                        <div class="jumbotron">
+                            <h1 class="display-4">REFILL HERE</h1>
+                        </div>
+                        <div class="card text-white bg-secondary mt-3">
+                            <div class="card-body">
+                                <h4 class="card-title">How to refill</h4>
+                                <p class="card-text">Refilling is easy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Refill_ends-->
+
+                    <!--Withdraw_starts-->
+                    <div class="tab-pane fade" id="Withdraw" role="tabpanel" aria-labelledby="Withdraw_tab">
+                        <div class="jumbotron">
+                            <h1 class="display-4">WITHDRAW HERE</h1>
+                        </div>
+                        <div class="card text-white bg-secondary mt-3">
+                            <div class="card-body">
+                                <h4 class="card-title">How to Withdraw</h4>
+                                <p class="card-text">Withdrawing is easy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Withdraw_ends-->
+
+                    <!--Invest_starts-->
+                    <div class="tab-pane fade" id="Invest" role="tabpanel" aria-labelledby="Invest_tab">
+                        <div class="jumbotron">
+                            <h1 class="display-4">INVEST HERE</h1>
+                        </div>
+                        <div class="card text-white bg-secondary mt-3">
+                            <div class="card-body">
+                                <h4 class="card-title">How to Invest</h4>
+                                <p class="card-text">Investing is easy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Invest_ends-->
+
+                    <!--Enterprise_starts-->
+                    <div class="tab-pane fade" id="Enterprise" role="tabpanel" aria-labelledby="Enterprise_tab">
+                        <div class="jumbotron">
+                            <h1 class="display-4">GO ENTERPRISE HERE</h1>
+                        </div>
+                        <div class="card text-white bg-secondary mt-3">
+                            <div class="card-body">
+                                <h4 class="card-title">How to go Enterprise</h4>
+                                <p class="card-text">Becoming Enterprise is easy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Enterprise_ends-->
+                </div>
+            </div>
+            <!--content_end-->
+
             <!--jquery/popper/bootstrap.js_start-->
             <script src="../assets/js/jquery.min.js"></script>
             <script src="../assets/js/popper.min.js"></script>
@@ -24,11 +129,12 @@
             <!--jquery/popper/bootstrap.js_end-->
         </div>
         <!--main_body_end-->
-        
+
         <!--footer_start-->
-        <footer>
-            
+        <footer class="p-2">
+           <p class="mb-1">Copyright &copy;2017</p>
+           <p class="text-muted m-0">Powered by &lt;NUIB&gt;</p>
         </footer>
         <!--footer_end-->
     </body>
-</htmk>
+</html>
