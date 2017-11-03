@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>About_Page</title>
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            flex: 0 0 auto;
+        }
+
+        #content {
+            flex: 1 0 auto;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        #incol {
+            overflow-y: scroll;
+            overflow-x: none;
+        }
+
+        footer {
+            flex: 0 0 auto;
+            background-color: #232222;
+            color: white;
+            text-align: center;
+            height: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--navbar_starting-->
+    <header>
+        <nav class="navbar navbar-light">
+            <!--brand_name_start-->
+            <a class="navbar-brand">AurbanPay</a>
+            <!--brand_name_end-->
+        </nav>
+    </header>
+    <!--navbar_ending-->
+
+    <!--main_body_start-->
+    <div class="container-fluid" style="min-height: 100%">
+        <div id="content" class="row">
+            <!--side_nav_start-->
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                    <a class="nav-link active" id="dashboard_tab" data-toggle="pill" href="#dashboard" role="tab" aria-controls="dashboard" aria-expanded="true">Dashboard</a>
+                    <a class="nav-link" id="setting_tab" data-toggle="pill" href="#setting" role="tab" aria-controls="setting" aria-expanded="true">Settings</a>
+                    <a class="nav-link" id="platform_values_tab" data-toggle="pill" href="#platform_values" role="tab" aria-controls="platform_values" aria-expanded="true">Plateform Values</a>
+                </div>
+            </div>
+            <!--side_nav_end-->
+
+            <!--content_start-->
+            <div class="col-md-9" id="incol">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!--dashboard_start-->
+                    <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard_tab">
+
+                    </div>
+                    <!--dashboard_end-->
+
+                    <!--setting_start-->
+                    <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting_tab">
+
+                    </div>
+                    <!--setting_end-->
+
+                    <!--platform_values_start-->
+                    <div class="tab-pane fade" id="platform_values" role="tabpanel" aria-labelledby="platform_values_tab">
+
+                        <div class="container">
+                            <div id="accordion" role="tablist">
+
+                                <!--create_agent_start-->
+                                <div class="card">
+                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="card-header" role="tab" id="headingOne">
+                                            <h5 class="mb-0">
+                                                Create Agent:
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="col-xs-12 col-sm-6 col-md-5 mx-auto text-center">
+                                                    <div class="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" name="phonenumber" placeholder="Phone Number" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="email" class="form-control" name="email" placeholder="Email" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>NIC Number</label>
+                                                        <input type="text" class="form-control" name="nic_number" placeholder="NIC Number" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" class="form-control" name="address" placeholder="Address" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Nationality</label>
+                                                        <input type="text" class="form-control" name="nationality" placeholder="Nationality" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Village</label>
+                                                        <input type="text" class="form-control" name="village" placeholder="Village" />
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <label class="mr-auto">Gender</label>
+                                                        <select name="gender" class="form-control">
+                                                <option>--Choose--</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" name="request" type="submit">Create Agent</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!--create_agent_end-->
+
+                                <!--Change_ads_start-->
+                                <div class="card">
+                                    <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="card-header" role="tab" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                Change Ads:
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="col-xs-12 col-sm-6 col-md-5 mx-auto text-center">
+                                                    <div class="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" name="phonenumber" placeholder="Phone Number" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Title</label>
+                                                        <input type="text" class="form-control" name="title" placeholder="Title" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Story</label>
+                                                        <input type="text" class="form-control" name="story" placeholder="Story" />
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <label class="mr-auto">Type</label>
+                                                        <select name="type" class="form-control">
+                                                <option>--Choose--</option>
+                                                <option>Product</option>
+                                                <option>Service</option>
+                                                <option>Ad</option>
+                                            </select>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" name="request" type="submit">Change Ads</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!--change_ads_end-->
+
+                                <!--Send_notification_start-->
+                                <div class="card">
+                                    <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <div class="card-header" role="tab" id="headingThree">
+                                            <h5 class="mb-0">
+                                                Send Notification:
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="col-xs-12 col-sm-6 col-md-5 mx-auto text-center">
+                                                    <div class="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" name="phonenumber" placeholder="Phone Number" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Msg</label>
+                                                        <input type="text" class="form-control" name="msg" placeholder="Msg" />
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <label class="mr-auto">Type</label>
+                                                        <select name="type" class="form-control">
+                                                <option>--Choose--</option>
+                                                <option>General</option>
+                                                <option>Custom</option>
+                                            </select>
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <label class="mr-auto">For</label>
+                                                        <select name="for" class="form-control">
+                                                <option>--Choose--</option>
+                                                <option>Users</option>
+                                                <option>Agents</option>
+                                            </select>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" name="request" type="submit">Send Notification</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!--send_notification_end-->
+
+                                <!--Send_email_start-->
+                                <div class="card">
+                                    <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        <div class="card-header" role="tab" id="headingFour">
+                                            <h5 class="mb-0">
+                                                Send Email:
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="col-xs-12 col-sm-6 col-md-5 mx-auto text-center">
+                                                    <div class="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" name="phonenumber" placeholder="Phone Number" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Msg</label>
+                                                        <input type="text" class="form-control" name="msg" placeholder="Msg" />
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <label class="mr-auto">Type</label>
+                                                        <select name="type" class="form-control">
+                                                <option>--Choose--</option>
+                                                <option>General</option>
+                                                <option>Custom</option>
+                                            </select>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" name="request" type="submit">Send Email</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!--send_email_end-->
+
+                                <!--Send_sms_start-->
+                                <div class="card">
+                                    <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        <div class="card-header" role="tab" id="headingFive">
+                                            <h5 class="mb-0">
+                                                Send SMS:
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="col-xs-12 col-sm-6 col-md-5 mx-auto text-center">
+                                                    <div class="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" name="phonenumber" placeholder="Phone Number" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Msg</label>
+                                                        <input type="text" class="form-control" name="msg" placeholder="Msg" />
+                                                    </div>
+                                                    <div class="form-inline">
+                                                        <label class="mr-auto">Type</label>
+                                                        <select name="type" class="form-control">
+                                                <option>--Choose--</option>
+                                                <option>General</option>
+                                                <option>Custom</option>
+                                            </select>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" name="request" type="submit">Send SMS</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!--Send_sms_end-->
+
+                                <!--Review_agent_start-->
+                                <div class="card">
+                                    <a data-toggle="collapse" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                        <div class="card-header" role="tab" id="headingSix">
+                                            <h5 class="mb-0">
+                                                Review Agent:
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <a href="#">1) Agent</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!--Review_agent_end-->
+
+                                <!--New Admin_start-->
+                                <div class="card mb-3">
+                                    <a data-toggle="collapse" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                        <div class="card-header" role="tab" id="headingSeven">
+                                            <h5 class="mb-0">
+                                                New Admin:
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="col-xs-12 col-sm-6 col-md-5 mx-auto text-center">
+                                                    <div class="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" class="form-control" name="phonenumber" placeholder="Phone Number" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="email" class="form-control" name="email" placeholder="Email" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Password</label>
+                                                        <input type="password" class="form-control" name="password" placeholder="Password" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Re-Password</label>
+                                                        <input type="password" class="form-control" name="re-password" placeholder="Re-Password" />
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" name="request" type="submit">New Admin</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--New_admin_end-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--platform_values_end-->
+
+                </div>
+
+            </div>
+            <!--content_end-->
+
+            <!--jquery/popper/bootstrap.js_start-->
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/popper.min.js"></script>
+            <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+            <!--jquery/popper/bootstrap.js_end-->
+        </div>
+    </div>
+    <!--main_body_end-->
+
+    <!--footer_start-->
+    <footer class="p-2">
+        <p class="mb-1">Copyright &copy;2017</p>
+        <p class="text-muted m-0">Powered by &lt;NUIB&gt;</p>
+    </footer>
+    <!--footer_end-->
+</body>
+
+</html>
