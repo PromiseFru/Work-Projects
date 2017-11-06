@@ -6,223 +6,217 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>About_Page</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        html {
-            width: 100%;
-            height: 100%;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-        }
-
-        header {
-            flex: 0 0 auto;
-        }
-
-        #content {
-            flex: 1 0 auto;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-        }
-
-        footer {
-            flex: 0 0 auto;
-            background-color: #232222;
-            color: white;
-            text-align: center;
-            height: 60px;
-        }
-
-    </style>
 </head>
 
 <body>
-    <!--navbar_starting-->
-    <header>
-        <nav class="navbar navbar-light">
-            <!--brand_name_start-->
-            <a class="navbar-brand">AurbanPay</a>
-            <!--brand_name_end-->
-        </nav>
-    </header>
-    <!--navbar_ending-->
 
-    <!--main_body_start-->
-    <div id="content" class="row">
-        <!--side_nav_start-->
-        <div class="col-md-3">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                <a class="nav-link active" id="Terms_tab" data-toggle="pill" href="#Terms" role="tab" aria-controls="Terms" aria-expanded="true">Terms and Conditions</a>
-                <a class="nav-link" id="About_us_tab" data-toggle="pill" href="#About_us" role="tab" aria-controls="About_us" aria-expanded="true">About us</a>
-                <a class="nav-link" id="Contact_us_tab" data-toggle="pill" href="#Contact_us" role="tab" aria-controls="About_us" aria-expanded="true">Contact us</a>
-                <a class="nav-link" id="Our_partners_tab" data-toggle="pill" href="#Our_partners" role="tab" aria-controls="Our_partners" aria-expanded="true">Our Partners</a>
-                <a class="nav-link" id="Enterprise_tab" data-toggle="pill" href="#Enterprise" role="tab" aria-controls="Enterprise" aria-expanded="true">Enterprise</a>
-                <a class="nav-link" id="Invest_tab" data-toggle="pill" href="#Invest" role="tab" aria-controls="Invest" aria-expanded="true">Invest</a>
-                <a class="nav-link" id="Premium_tab" data-toggle="pill" href="#Premium" role="tab" aria-controls="Premium" aria-expanded="true">Premium</a>
+    <!--main_container_starts-->
+    <div class="container-fluid">
+
+        <!--navbar_starting-->
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-light">
+                    <!--brand_name_start-->
+                    <a class="navbar-brand">AurbanPay</a>
+                    <!--brand_name_end-->
+                </nav>
             </div>
         </div>
-        <!--side_nav_end-->
+        <!--navbar_ending-->
 
-        <!--content_start-->
-        <div class="col-md-9">
-            <div class="tab-content" id="v-pills-tabContent">
-                <!--Terms_and_Conditions_start-->
-                <div class="tab-pane fade show active" id="Terms" role="tabpanel" aria-labelledby="Terms_tab">
-                    <div class="jumbotron">
-                        <h1 class="display-4">OUR TERMS AND CONDITIONS</h1>
-                    </div>
-                    <div class="card text-white bg-secondary mt-3">
-                        <div class="card-body">
-                            <h4 class="card-title">This our our terms</h4>
-                            <p class="card-text">obeying is easy</p>
-                        </div>
-                    </div>
+        <!--main_body_starts-->
+        <div class="row">
+
+            <!--side_nav_starts-->
+            <div class="col-sm-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                    <a class="nav-link active" id="1-tab" data-toggle="pill" href="#1" role="tab" aria-controls="1" aria-expanded="true">Terms and Conditions</a>
+                    <a class="nav-link" id="2-tab" data-toggle="pill" href="#2" role="tab" aria-controls="2" aria-expanded="true">About us</a>
+                    <a class="nav-link" id="3-tab" data-toggle="pill" href="#3" role="tab" aria-controls="3" aria-expanded="true">Contact us</a>
+                    <a class="nav-link" id="4-tab" data-toggle="pill" href="#4" role="tab" aria-controls="4" aria-expanded="true">Our Partners</a>
+                    <a class="nav-link" id="5-tab" data-toggle="pill" href="#5" role="tab" aria-controls="5" aria-expanded="true">Enterprise</a>
+                    <a class="nav-link" id="6-tab" data-toggle="pill" href="#6" role="tab" aria-controls="6" aria-expanded="true">Invest</a>
+                    <a class="nav-link" id="7-tab" data-toggle="pill" href="#7" role="tab" aria-controls="7" aria-expanded="true">Premium</a>
                 </div>
-                <!--Terms_and_Conditions_ends-->
-
-                <!--About_us_starts-->
-                <div class="tab-pane fade" id="About_us" role="tabpanel" aria-labelledby="About_us_tab">
-                    <div class="jumbotron">
-                        <h1 class="display-4">READ ABOUT US</h1>
-                    </div>
-                    <div class="card text-white bg-secondary mt-3">
-                        <div class="card-body">
-                            <h4 class="card-title">Our info</h4>
-                            <p class="card-text">That is out info</p>
-                        </div>
-                    </div>
-                </div>
-                <!--About_us_ends-->
-
-                <!--Contact_us_starts-->
-                <div class="tab-pane fade" id="Contact_us" role="tabpanel" aria-labelledby="Contact_us_tab">
-                    <div class="jumbotron">
-                        <h1 class="display-4">OUR CONTACT</h1>
-                    </div>
-                    <div class="card text-white bg-secondary mt-3">
-                        <div class="card-body">
-                            <h4 class="card-title">How to Contact us</h4>
-                            <p class="card-text">Contacting us is easy</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Contact_us_ends-->
-
-                <!--Our_partners_starts-->
-                <div class="tab-pane fade" id="Our_partners" role="tabpanel" aria-labelledby="Our_partners_tab">
-                    <div class="jumbotron">
-                        <h1 class="display-4">OUR PARTNERS ARE:</h1>
-                    </div>
-                    <div class="card text-white bg-secondary mt-3">
-                        <div class="card-body">
-                            <h4 class="card-title">banks</h4>
-                            <p class="card-text">Partnering is easy</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Our_partners_ends-->
-
-                <!--Enterprise_starts-->
-                <div class="tab-pane fade" id="Enterprise" role="tabpanel" aria-labelledby="Enterprise_tab">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!--Enterprise_inside_tabs_start-->
-                            <div class="nav nav-tabs" id="v-pills-tab" role="tablist">
-                                <a class="nav-link active" id="Refill_tab" data-toggle="tab" href="#Refill" role="tab" aria-controls="Refill" aria-expanded="true">Refill</a>
-                                <a class="nav-link" id="Withdraw_tab" data-toggle="tab" href="#Withdraw" role="tab" aria-controls="Withdraw" aria-expanded="true">Withdraw</a>
-                            </div>
-                            <!--Enterprise_inside_tabs_end-->
-
-                            <!--Enterprise_inside_content_start-->
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <!--Refill_start-->
-                                <div class="tab-pane fade show active" id="Refill" role="tabpanel" aria-labelledby="Refill_tab">
-                                    <div class="jumbotron">
-                                        <h1 class="display-4">REFILL HERE</h1>
-                                    </div>
-                                    <div class="card text-white bg-secondary mt-3">
-                                        <div class="card-body">
-                                            <h4 class="card-title">How to refill</h4>
-                                            <p class="card-text">Refilling is easy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Refill_ends-->
-
-                                <!--Withdraw_starts-->
-                                <div class="tab-pane fade" id="Withdraw" role="tabpanel" aria-labelledby="Withdraw_tab">
-                                    <div class="jumbotron">
-                                        <h1 class="display-4">WITHDRAW HERE</h1>
-                                    </div>
-                                    <div class="card text-white bg-secondary mt-3">
-                                        <div class="card-body">
-                                            <h4 class="card-title">How to Withdraw</h4>
-                                            <p class="card-text">Withdrawing is easy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Withdraw_ends-->
-
-                            </div>
-                            <!--Enterprise_inside_content_end-->
-                        </div>
-
-                    </div>
-
-                </div>
-                <!--Enterprise_ends-->
-
-                <!--Invest_starts-->
-                <div class="tab-pane fade" id="Invest" role="tabpanel" aria-labelledby="Invest_tab">
-                    <div class="jumbotron">
-                        <h1 class="display-4">INVEST HERE</h1>
-                    </div>
-                    <div class="card text-white bg-secondary mt-3">
-                        <div class="card-body">
-                            <h4 class="card-title">How to Invest</h4>
-                            <p class="card-text">Investing is easy</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Invest_ends-->
-
-                <!--Premium_starts-->
-                <div class="tab-pane fade" id="Premium" role="tabpanel" aria-labelledby="Premium_tab">
-                    <div class="jumbotron">
-                        <h1 class="display-4">GO PREMIUM HERE</h1>
-                    </div>
-                    <div class="card text-white bg-secondary mt-3">
-                        <div class="card-body">
-                            <h4 class="card-title">How to Go Premium</h4>
-                            <p class="card-text">Being Premium is easy</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Premium_ends-->
             </div>
+            <!--side_nav_ends-->
+
+            <!--content_start-->
+            <div class="col-sm-9">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <!--Terms_and_conditiona_start-->
+                    <div class="tab-pane fade show active" id="1" role="tabpanel" aria-labelledby="1-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="jumbotron">
+                                    <h1 class="display-4">OUR TERMS AND CONDITIONS</h1>
+                                </div>
+                                <div class="card text-white bg-secondary mt-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">This our our terms</h4>
+                                        <p class="card-text">obeying is easy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Trms_and_conditiona_ends-->
+
+                    <!--about_us_start-->
+                    <div class="tab-pane fade" id="2" role="tabpanel" aria-labelledby="2-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="jumbotron">
+                                    <h1 class="display-4">READ ABOUT US</h1>
+                                </div>
+                                <div class="card text-white bg-secondary mt-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Our info</h4>
+                                        <p class="card-text">That is out info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--about_us_ends-->
+
+                    <!--contact_us_start-->
+                    <div class="tab-pane fade" id="3" role="tabpanel" aria-labelledby="3-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="jumbotron">
+                                    <h1 class="display-4">OUR CONTACT</h1>
+                                </div>
+                                <div class="card text-white bg-secondary mt-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">How to Contact us</h4>
+                                        <p class="card-text">Contacting us is easy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--contact_us_ends-->
+
+                    <!--our_partners_start-->
+                    <div class="tab-pane fade" id="4" role="tabpanel" aria-labelledby="4-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="jumbotron">
+                                    <h1 class="display-4">OUR PARTNERS ARE:</h1>
+                                </div>
+                                <div class="card text-white bg-secondary mt-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">banks</h4>
+                                        <p class="card-text">Partnering is easy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--our_partners_ends-->
+
+                    <!--enterprise_start-->
+                    <div class="tab-pane fade" id="5" role="tabpanel" aria-labelledby="5-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--enterprise_navs_starts-->
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-expanded="true">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">Profile</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" id="pills-dropdown1-tab" href="#pills-dropdown1" role="tab" data-toggle="pill" aria-controls="pills-dropdown1">@fat</a>
+                                            <a class="dropdown-item" id="pills-dropdown2-tab" href="#pills-dropdown2" role="tab" data-toggle="pill" aria-controls="pills-dropdown2">@mdo</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--enterprsie_nav_ends-->
+                                
+                                <!--enterprise_content_start-->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-dropdown1" role="tabpanel" aria-labelledby="pills-dropdown1-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-dropdown2" role="tabpanel" aria-labelledby="pills-dropdown2-tab">...</div>
+                                </div>
+                                <!--enterprise_content_ends-->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--enterprise_ends-->
+
+                    <!--invest_start-->
+                    <div class="tab-pane fade" id="6" role="tabpanel" aria-labelledby="6-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="jumbotron">
+                                    <h1 class="display-4">INVEST HERE</h1>
+                                </div>
+                                <div class="card text-white bg-secondary mt-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">How to Invest</h4>
+                                        <p class="card-text">Investing is easy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--invest_ends-->
+
+                    <!--premium_start-->
+                    <div class="tab-pane fade" id="7" role="tabpanel" aria-labelledby="7-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="jumbotron">
+                                    <h1 class="display-4">GO PREMIUM HERE</h1>
+                                </div>
+                                <div class="card text-white bg-secondary mt-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">How to Go Premium</h4>
+                                        <p class="card-text">Being Premium is easy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--premium_ends-->
+
+                </div>
+            </div>
+            <!--content_ends-->
 
         </div>
-        <!--content_end-->
+        <!--main_body_ends-->
 
-        <!--jquery/popper/bootstrap.js_start-->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <!--jquery/popper/bootstrap.js_end-->
+        <!--footer_start-->
+        <div class="row">
+            <div class="col-sm-12">
+                <footer class="p-2">
+                    <p class="mb-1">Copyright &copy;2017</p>
+                    <p class="text-muted m-0">Powered by &lt;NUIB&gt;</p>
+                </footer>
+            </div>
+        </div>
+        <!--footer_end-->
+
     </div>
-    <!--main_body_end-->
+    <!--main_container_ends-->
 
-    <!--footer_start-->
-    <footer class="p-2">
-        <p class="mb-1">Copyright &copy;2017</p>
-        <p class="text-muted m-0">Powered by &lt;NUIB&gt;</p>
-    </footer>
-    <!--footer_end-->
+    <!--jquery/popper/bootstrap.js_start-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--jquery/popper/bootstrap.js_end-->
 </body>
 
 </html>
